@@ -1,7 +1,49 @@
+import Tarefa from '../../components/Tarefa'
+import { ContainerLista } from './styles'
+
+const tarefas = [
+  {
+    titulo: 'Estudar TypeScript',
+    descricao: 'Ver aulas',
+    prioridade: 'Importante',
+    status: 'pendente'
+  },
+  {
+    titulo: 'Estudar javaScript',
+    descricao: 'Ver aulas',
+    prioridade: 'Importante',
+    status: 'pendente'
+  },
+  {
+    titulo: 'Estudar HTML',
+    descricao: 'Ver aulas',
+    prioridade: 'Importante',
+    status: 'Concluido'
+  },
+  {
+    titulo: 'Estudar Css',
+    descricao: 'Ver aulas',
+    prioridade: 'Importante',
+    status: 'Concluido'
+  }
+]
+
 const ListaDeTarefas = () => (
-  <main>
+  <ContainerLista>
     <p>2 tarefas marcadas como: &quot;categoria&lquo; e &quot;termo&lquo;</p>
-  </main>
+    <ul>
+      {tarefas.map((t) => (
+        <li key={t.titulo}>
+          <Tarefa
+            descricao={t.descricao}
+            prioridade={t.prioridade}
+            status={t.status}
+            titulo={t.titulo}
+          />
+        </li>
+      ))}
+    </ul>
+  </ContainerLista>
 )
 
 export default ListaDeTarefas

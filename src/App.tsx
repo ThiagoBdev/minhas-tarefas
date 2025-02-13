@@ -8,8 +8,8 @@ function App() {
       <EstiloGlobal />
       <Container>
         <BarraLateral />
+        <ListaDeTarefas />
       </Container>
-      <ListaDeTarefas />
     </>
   )
 }
