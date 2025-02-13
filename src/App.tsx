@@ -6,8 +6,9 @@ function App() {
   return (
     <>
       <EstiloGlobal />
-      <Container />
-      <BarraLateral />
+      <Container>
+        <BarraLateral />
+      </Container>
       <ListaDeTarefas />
     </>
   )
