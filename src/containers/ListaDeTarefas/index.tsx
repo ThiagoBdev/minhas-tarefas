@@ -18,13 +18,13 @@ const tarefas = [
     titulo: 'Estudar HTML',
     descricao: 'Ver aulas',
     prioridade: 'Importante',
-    status: 'Concluido'
+    status: 'concluido'
   },
   {
     titulo: 'Estudar Css',
     descricao: 'Ver aulas',
     prioridade: 'Importante',
-    status: 'Concluido'
+    status: 'concluido'
   }
 ]
 
